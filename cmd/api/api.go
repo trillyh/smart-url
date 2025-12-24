@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"smart-url/internal/store"
 	"time"
 
 	"github.com/go-chi/chi/v5"
@@ -10,7 +11,8 @@ import (
 )
 
 type application struct {
-	config config
+	config  config
+	storage store.Storage
 }
 
 type config struct {
