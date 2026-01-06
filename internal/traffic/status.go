@@ -17,4 +17,5 @@ func (s TrafficStatus) String() string {
 	case Duplicate:
 		return "DUPLICATE"
 	}
+	return "STATUSUNKNOWN"
 }
